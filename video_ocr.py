@@ -14,10 +14,10 @@ reader = easyocr.Reader(['ru', 'en'], gpu=True)  # если есть CUDA — gp
 
 # параметры фильтрации
 PERSIST_FRAMES = 3
-SSIM_MATCH_PENDING = 0.88
-SSIM_MATCH_SAVED = 0.5
-MIN_CARD_HEIGHT = 80
-PRUNE_AGE = 40
+SSIM_MATCH_PENDING = 0.85
+SSIM_MATCH_SAVED = 0.85
+MIN_CARD_HEIGHT = 40
+PRUNE_AGE = 60
 
 
 def find_vertical_ellipsis(boxes):

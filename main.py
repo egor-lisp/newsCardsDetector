@@ -40,7 +40,7 @@ def draw_matches(img, matches, output_path):
 def main():
     pattern_matcher = PatternMatcher()
     s = time.time()
-    filtered_boxes, _, img = extract_boxes("test_images/11.png")
+    filtered_boxes, _, img = extract_boxes("test_images/7.png")
     print(f"Время выполнения extract_boxes: {time.time() - s}")
 
     # сохраняем картинку только с filtered_boxes
